@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+:root{
+   --white-color : #fff;
+   --button-correct: #5aae76;
+   --button-wrong : #e13e3e;
+   --button-hover : #aaa; 
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:#dc211e;
+  font-family: "Rammetto One",sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+.main{
+  display: flex;
+  max-height: 100%;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.header{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  height: 100px;
+  color: #ffcb05;
+}
+#pokemon-img{
+  height: 200px;
+  max-width: 100%;
+}
+.optioncontainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+button{
+  height: 50px;
+  margin: 10px;
+  width: calc(50% - 25px);
+  font-size: 15px;
+  cursor: pointer;
+  border: 5px solid #3a5ca8;
+  border-radius: 5px;
+  outline: none;
+  color:#0c0c0c;
+  font-family: "Rammetto One",sans-serif;
+  font-weight: 200;
+  background-color: #ffcb05;
+}
+button:hover{
+  cursor: pointer;
+  background-color: #aaa;
+}
+button.correct{
+  background-color: #00fe55;
+}
+button.wrong{
+  background-color: #f60000;
+}
+.lodingcontainer{
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+.loding-img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 20%;
+}
+.points{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+.show{
+  display: flex;
+}
+.hide{
+  display: none;
+}
